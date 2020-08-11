@@ -1,0 +1,177 @@
+// global styles for <a> and <p> tags
+$govuk-global-styles: true;
+
+// We can't mount GOV.UK Frontend's assets at root as it's done automatically by the extensions framework.
+$govuk-assets-path: '/govuk/assets/';
+
+// Import GOV.UK Frontend and any extension styles if extensions have been configured
+@import "lib/extensions/extensions";
+
+// Patterns that aren't in Frontend
+@import "patterns/step-by-step-header";
+@import "patterns/step-by-step-nav";
+@import "patterns/step-by-step-related";
+@import "patterns/task-list";
+@import "patterns/related-items";
+
+// Components that aren't in Frontend
+@import "components/cookie-banner";
+
+// Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// TABS
+
+
+  .govuk-tabs__list {
+    @include govuk-clearfix;
+    margin-bottom: 0;
+    border-bottom: 1px solid $govuk-border-colour;
+  }
+
+  .govuk-tabs__title {
+    display: none;
+  }
+
+  .govuk-tabs__list-item {
+    position: relative;
+
+    margin-right: govuk-spacing(1);
+    margin-bottom: 0;
+    margin-left: 0;
+    padding: govuk-spacing(2) govuk-spacing(4);
+
+    float: left;
+    background-color: govuk-colour("light-grey", $legacy: "grey-4");
+    text-align: center;
+
+    &::before {
+      content: none;
+    }
+  }
+
+  .govuk-tabs__list-item--selected {
+    $border-width: 1px;
+
+    position: relative;
+
+    margin-top: - govuk-spacing(1);
+
+    // Compensation for border (otherwise we get a shift)
+    margin-bottom: -$border-width;
+    padding-top: govuk-spacing(3) - $border-width;
+    padding-right: govuk-spacing(4) - $border-width;
+    padding-bottom: govuk-spacing(3) + $border-width;
+    padding-left: govuk-spacing(4) - $border-width;
+
+    border: $border-width solid $govuk-border-colour;
+    border-bottom: 0;
+
+    background-color: $govuk-body-background-colour;
+
+    .govuk-tabs__tab {
+      text-decoration: none;
+    }
+  }
+
+  .govuk-tabs__tab {
+    @include govuk-link-style-text;
+
+    margin-bottom: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .govuk-tabs__panel {
+    @include govuk-responsive-margin(0, "bottom");
+    padding: govuk-spacing(6) govuk-spacing(4);
+    border: 1px solid $govuk-border-colour;
+    border-top: 0;
+
+    & > :last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .govuk-tabs__panel--hidden {
+    display: none;
+  }
+
+
+.app-c-inverse-header {
+  width: 100%;
+  background-color: govuk-colour("blue");
+  color: govuk-colour("white");
+  margin-bottom: govuk-spacing(6);
+  padding: 0 govuk-spacing(6) govuk-spacing(6);
+}
+
+.app-c-inverse-header a {
+  color: govuk-colour("white");
+}
+
+.app-c-inverse-header--full-width {
+  padding-left: govuk-spacing(3);
+  padding-right: govuk-spacing(3);
+  padding-bottom: govuk-spacing(3);
+  margin-left: -15px;
+  margin-right: 0px;
+}
+
+.app-c-inverse-header--padding-top {
+  padding-top: govuk-spacing(3);
+}
+
+.app-c-title--inverse {
+  color: govuk-colour("white");
+
+  .app-c-title__text,
+  .app-c-title__context {
+    color: inherit;
+  }
+}
+
+.app-c-lead-paragraph--inverse {
+  color: govuk-colour("white");
+}
+
+.app-c-list-inverse {
+  color: govuk-colour("white");
+
+  .govuk-link{
+    color: inherit;
+  }
+}
+
+.app-c-back-link-inverse {
+  width: 100%;
+  background-color: govuk-colour("blue");
+  padding: 0 govuk-spacing(3) govuk-spacing(3);
+  border-color: govuk-colour("white");
+  margin-top: -10px;
+  margin-bottom: 0;
+  margin-left: -15px;
+  margin-right: 0px;
+
+  .govuk-back-link {
+    color: govuk-colour("white");
+  }
+}
+
+.govuk-main-wrapper {
+  padding-top: 0;
+}
+
+.pad-stuff {
+  padding: govuk-spacing(3);
+}
+
+.govuk-header__container {
+  margin: 0
+}
