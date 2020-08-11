@@ -4,8 +4,8 @@ const router = express.Router()
 const request = require('request');
 // Add your routes here - above the module.exports line
 
-// const BASE_URL = "https://govuk-explore-api-p1.herokuapp.com/"
-const BASE_URL = "http://localhost:3010/"
+const BASE_URL = "https://govuk-explore-api-p1.herokuapp.com/"
+//const BASE_URL = "http://localhost:3010/"
 
 router.get('/browse/:topicSlug', function (req, res) {
   topicSlug = req.params.topicSlug

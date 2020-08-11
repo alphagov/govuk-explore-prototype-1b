@@ -175,3 +175,15 @@ $govuk-assets-path: '/govuk/assets/';
 .govuk-header__container {
   margin: 0
 }
+
+.topic-link {
+  position: relative;
+  padding: govuk-spacing(6);
+  border-bottom: solid 2px  $govuk-border-colour;
+}
+
+.topic-link::after {
+  content: "˃";
+  position: absolute;
+  right: 0;
+}
