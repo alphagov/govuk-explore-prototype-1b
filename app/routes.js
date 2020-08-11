@@ -16,6 +16,16 @@ router.get('/browse/:topicSlug', function (req, res) {
   })
 })
 
+router.get('/browse/:topicSlug/:subTopicSlug', function (req, res) {
+  topicSlug = req.params.topicSlug
+  subTopicSlug = req.params.subTopicSlug
+
+  request(BASE_URL + "browse/" + topicSlug + "/" + subTopicSlug, { json: true }, (error, result, body) => {
+    console.log(body)
+    res.render('sub_topic', body)
+  })
+})
+
 router.get('/*', function(req,res) {
   //modify the url in any way you want
   var newurl = 'https://www.gov.uk/' + req.path;
