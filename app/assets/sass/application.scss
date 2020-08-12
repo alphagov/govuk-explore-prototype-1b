@@ -235,7 +235,7 @@ $govuk-assets-path: '/govuk/assets/';
 .feature-links li {
   display: block;
   min-height: 28px;
-  padding-left: 35px;
+  padding-left: 40px;
   padding-top: 5px;
   background-image: url('/public/images/arrow.svg');
   background-repeat: no-repeat, repeat;
@@ -270,9 +270,6 @@ $govuk-assets-path: '/govuk/assets/';
   text-decoration: none;
 }
 
-.govuk-heading-l {
-  margin-bottom: 15px;
-}
 /* Government activity section */
 .publications {
   margin-left: -15px;
