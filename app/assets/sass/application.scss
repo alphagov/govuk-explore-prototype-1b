@@ -234,8 +234,12 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 /* Topic tabs */
-.sub-topics {
-  margin-bottom: -20px;
+// .sub-topics {
+//   margin-bottom: -20px;
+// }
+
+.govuk-tabs {
+    margin-top: -75px;
 }
 
 /* Tab padding - making accordions appear full width */
