@@ -218,14 +218,19 @@ $govuk-assets-path: '/govuk/assets/';
 
 /* Feature links */
 .feature-links {
-  display: block;
   padding-bottom: 50px;
-  padding-left: 30px;
-  list-style-image: url('/public/images/arrow.svg');
 }
 
 .feature-links li {
-  padding-bottom: 20px;
+  display: block;
+  min-height: 28px;
+  padding-left: 35px;
+  padding-top: 5px;
+  background-image: url('/public/images/arrow.svg');
+  background-repeat: no-repeat, repeat;
+  background-position: 0px 0px;
+  list-style: none;
+  margin-left: -20px;
 }
 
 /* Topic tabs */
