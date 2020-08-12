@@ -171,9 +171,9 @@ $govuk-assets-path: '/govuk/assets/';
   padding-top: 0;
 }
 
-.pad-stuff {
-  padding: govuk-spacing(3);
-}
+// .pad-stuff {
+//   padding: govuk-spacing(3);
+// }
 
 .govuk-header__container {
   // margin: 0
@@ -203,6 +203,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 .govuk-back-link[href] {
   text-decoration: none;
+  color: white;
 }
 
 .govuk-back-link::before {
@@ -235,6 +236,10 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 // Typography
+.govuk-heading-m {
+  margin-bottom: 25px;
+}
+
 .govuk-heading-xl {
   margin-bottom: 10px;
 }
@@ -250,7 +255,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 /* Feature links */
 .feature-links {
-  padding-bottom: 50px;
+  padding-bottom: 35px;
 }
 
 .feature-links a {
@@ -286,7 +291,7 @@ $govuk-assets-path: '/govuk/assets/';
 .topic-link::after {
     content: url('/public/images/chevron-right.svg');
     position: absolute;
-    right: 15px;
+    right: 25px;
   }
 
 .govuk-link  {
@@ -321,6 +326,9 @@ $govuk-assets-path: '/govuk/assets/';
 .js-enabled .govuk-accordion a {
   text-decoration: none;
 }
+
+// Accordion icons
+
 
 /* Government activity section */
 .publications {
