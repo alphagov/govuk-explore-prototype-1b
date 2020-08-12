@@ -203,6 +203,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 .govuk-back-link[href] {
   text-decoration: none;
+  color: white;
 }
 
 .govuk-back-link::before {
@@ -235,6 +236,10 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 // Typography
+.govuk-heading-m {
+  margin-bottom: 25px;
+}
+
 .govuk-heading-xl {
   margin-bottom: 10px;
 }
@@ -321,6 +326,9 @@ $govuk-assets-path: '/govuk/assets/';
 .js-enabled .govuk-accordion a {
   text-decoration: none;
 }
+
+// Accordion icons
+
 
 /* Government activity section */
 .publications {
