@@ -20,7 +20,7 @@
         <p class="govuk-body-l app-c-lead-paragraph--inverse">{{ description }}</p>
 
         <h2 class="govuk-heading-l app-c-title--inverse">Featured links</h2>
-        <ol class="govuk-list govuk-list--bullet app-c-list-inverse">
+        <ol class="feature-links govuk-list govuk-list--bullet app-c-list-inverse">
         {% for feature in featured %}
           <li class="govuk-!-margin-bottom-3"><a href="{{feature.link}}" class="govuk-link">{{feature.title}}</a></li>
         {% endfor %}
@@ -33,6 +33,20 @@
 
       {% set topicsHtml %}
         {{ govukAccordion(subtopic_sections) }}
+
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">Related topics</h2>
+          <div class="topic-tags">
+            <ul>
+              {% for topic in related_topics %}
+                <li><a href="{{ topic.link }}">{{ topic.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
       {% endset -%}
 
       {% set governmentHtml %}
@@ -47,7 +61,7 @@
         <a href="/search/news-and-communications?level_one_taxon=dded88e2-f92e-424f-b73e-6ad24a839c51">See all news</a>
       </p>
 
-      <div class="govuk-footer pad-stuff">
+      <div class="publications govuk-footer pad-stuff">
         <h2 class="govuk-heading-l">Publications</h2>
         <p class="govuk-body-l">Regulation, research, policy and data in this topic</p>
         <p class=govuk-body>
