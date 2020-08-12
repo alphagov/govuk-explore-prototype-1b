@@ -192,6 +192,19 @@ $govuk-assets-path: '/govuk/assets/';
 // Mia's stuff
 
 // Header area
+.govuk-back-link {
+  background-image: url('/public/images/chevron-back.svg');
+  background-repeat: no-repeat;
+  background-position: 0px 2px;
+}
+
+.govuk-back-link[href] {
+  text-decoration: none;
+}
+
+.govuk-back-link::before {
+  content: none;
+}
 
 .sub-topic-header {
   background-color: #03579F;
