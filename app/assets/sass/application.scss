@@ -242,6 +242,7 @@ $govuk-assets-path: '/govuk/assets/';
 
 .govuk-heading-xl {
   margin-bottom: 10px;
+  padding-top: 15px;
 }
 
 .govuk-body-l {
@@ -251,6 +252,10 @@ $govuk-assets-path: '/govuk/assets/';
 
 .govuk-body-m, .govuk-body, p {
   margin-bottom: 20px;
+}
+
+.govuk-body a {
+  text-decoration: none;
 }
 
 /* Feature links */
@@ -322,6 +327,11 @@ $govuk-assets-path: '/govuk/assets/';
     padding-right: 15px;
 }
 
+// A-Z lists
+.a-z-list li {
+    padding-bottom: 25px;
+}
+
 /* Accordion styles */
 .js-enabled .govuk-accordion a {
   text-decoration: none;
@@ -338,6 +348,7 @@ $govuk-assets-path: '/govuk/assets/';
   padding-right: 15px;
   padding-top: 35px;
   padding-bottom: 35px;
+  border-top: 0;
 }
 
 /* Wrapping sub-topics headings 2/3rds, so that it sits in line with 'open all' */
@@ -388,4 +399,22 @@ img {
 
 .topic-tags a {
   text-decoration: none;
+}
+
+// Accordion icons
+
+.govuk-accordion__icon:after {
+  display: none;
+}
+
+.govuk-accordion__icon:before {
+  display: none;
+}
+
+.govuk-accordion__icon {
+  background-image: url('/public/images/chevron-down.svg');
+}
+
+.govuk-accordion__section--expanded .govuk-accordion__icon {
+  background-image: url('/public/images/chevron-up.svg');
 }
