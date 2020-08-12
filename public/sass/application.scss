@@ -191,9 +191,17 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Mia's stuff
 
-.topic-head {
+// Header area
+.govuk-back-link {
+  background-image: url('/public/images/back-arrow.svg');
 }
 
+.sub-topic-header {
+  background-color: #03579F;
+}
+.app-c-inverse-header--full-width {
+  padding-bottom: 55px;
+}
 .lede {
   font-size: 22px;
   margin-bottom: 35px;
@@ -202,9 +210,7 @@ $govuk-assets-path: '/govuk/assets/';
 .page-heading {
   margin-bottom: 5px;
 }
-.govuk-tabs {
-  margin-top: -79px;
-}
+
 
 .js-enabled .govuk-tabs__list,.js-enabled .govuk-tabs__list-item--selected {
   border: none;
@@ -216,6 +222,20 @@ $govuk-assets-path: '/govuk/assets/';
   padding-right: 0;
 }
 
+// Typography
+.govuk-heading-xl {
+  margin-bottom: 10px;
+}
+
+.govuk-body-l {
+  margin-bottom: 45px;
+  font-size: 22px;
+}
+
+.govuk-body-m, .govuk-body, p {
+  margin-bottom: 20px;
+}
+
 /* Feature links */
 .feature-links {
   padding-bottom: 50px;
@@ -224,7 +244,7 @@ $govuk-assets-path: '/govuk/assets/';
 .feature-links li {
   display: block;
   min-height: 28px;
-  padding-left: 35px;
+  padding-left: 40px;
   padding-top: 5px;
   background-image: url('/public/images/arrow.svg');
   background-repeat: no-repeat, repeat;
@@ -234,8 +254,12 @@ $govuk-assets-path: '/govuk/assets/';
 }
 
 /* Topic tabs */
-.sub-topics {
-  margin-bottom: -20px;
+.govuk-tabs {
+    margin-top: -75px;
+}
+
+.govuk-tabs__list-item {
+  min-width: 80px;
 }
 
 /* Tab padding - making accordions appear full width */
@@ -259,9 +283,6 @@ $govuk-assets-path: '/govuk/assets/';
   text-decoration: none;
 }
 
-.govuk-heading-l {
-  margin-bottom: 15px;
-}
 /* Government activity section */
 .publications {
   margin-left: -15px;
@@ -269,6 +290,7 @@ $govuk-assets-path: '/govuk/assets/';
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 /* Wrapping sub-topics headings 2/3rds, so that it sits in line with 'open all' */
@@ -296,9 +318,8 @@ img {
   width:100%;
 }
 
-/* lists */
-.govuk-list li {
-  // color: red;
+/* Accordion lists */
+.govuk-accordion li {
   padding-bottom: 20px;
 }
 /* //// */
@@ -316,4 +337,9 @@ img {
   border-bottom: 5px solid #1d70b8;
   margin-right: 15px;
   margin-bottom: 15px;
+  text-decoration: none;
+}
+
+.topic-tags a {
+  text-decoration: none;
 }
