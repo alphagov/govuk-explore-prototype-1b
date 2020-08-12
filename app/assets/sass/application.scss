@@ -327,6 +327,11 @@ $govuk-assets-path: '/govuk/assets/';
     padding-right: 15px;
 }
 
+// A-Z lists
+.a-z-list li {
+    padding-bottom: 25px;
+}
+
 /* Accordion styles */
 .js-enabled .govuk-accordion a {
   text-decoration: none;
