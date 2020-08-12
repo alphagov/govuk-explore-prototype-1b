@@ -251,6 +251,10 @@ $govuk-assets-path: '/govuk/assets/';
   padding-bottom: 50px;
 }
 
+.feature-links a {
+  text-decoration: none;
+}
+
 .feature-links li {
   display: block;
   min-height: 28px;
