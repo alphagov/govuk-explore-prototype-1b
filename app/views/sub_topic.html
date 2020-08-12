@@ -36,7 +36,9 @@
           {{ govukAccordion(subtopic_sections) }}
         {% else %}
         <h2 class="govuk-heading-m">{{ subtopic_sections.items[0].heading.text }}</h2>
+        <div class="a-z-list">
           {{ subtopic_sections.items[0].content.html|safe }}
+        </div>
         {% endif %}
 
       <div class="govuk-grid-row">
