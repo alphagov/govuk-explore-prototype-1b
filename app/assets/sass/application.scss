@@ -227,6 +227,7 @@ $govuk-assets-path: '/govuk/assets/';
 .govuk-body-m, .govuk-body, p {
   margin-bottom: 20px;
 }
+
 /* Feature links */
 .feature-links {
   padding-bottom: 50px;
@@ -247,6 +248,10 @@ $govuk-assets-path: '/govuk/assets/';
 /* Topic tabs */
 .govuk-tabs {
     margin-top: -75px;
+}
+
+.govuk-tabs__list-item {
+  min-width: 100px;
 }
 
 /* Tab padding - making accordions appear full width */
